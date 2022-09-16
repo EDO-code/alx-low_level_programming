@@ -2,8 +2,6 @@
 
 /**
  * print_square - prints a square of #'s size
- * @r: row
- * @c: column
  * @size: size of square
  */
 
