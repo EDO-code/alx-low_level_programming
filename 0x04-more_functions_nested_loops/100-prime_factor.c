@@ -20,7 +20,7 @@ int main(void)
 		}
 		else
 		{
-			divisor++
+			divisor++;
 		}
 	}
 	printf("%lu\n", num);
