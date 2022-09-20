@@ -8,24 +8,24 @@
 
 void print_rev(char *s)
 {
-	int idx = 0;
-	int r_idx;
-	int x;
+	int index = 0;
+	int r_index;
+	int d;
 	int length;
 
 	for (length = 0; s[length] != '\0'; length++)
 	{
 		continue;
 	}
-	r_idx = length - 1;
+	r_index = length - 1;
 
-	while (idx != r_idx && idx < r_idx)
+	while (index != r_index && index < r_index)
 	{
-		x = s[idx];
-		s[idx] = s[r_idx];
-		s[r_idx] = x;
-		idx++;
-		r_idx--;
+		d = s[index];
+		s[index] = s[r_index];
+		s[r_index] = d;
+		index++;
+		r_index--;
 	}
 }
 
