@@ -1,17 +1,27 @@
-#ifndef MAIN_H
-#define MAIN_H
+#include "main.h"
 
-char *_strcat(char *dest, char *src);
-char *_strncat(char *dest, char *src, int n);
-char *_strncpy(char *dest, char *src, int n);
-int _strcmp(char *s1, char *s2);
-void reverse_array(int *a, int n);
-char *string_toupper(char *);
-char *cap_string(char *);
-char *leet(char *);
-char *rot13(char *);
-void print_number(int n);
-char *infinite_add(char *n1, char *n2, char *r, int size_r);
-void print_buffer(char *b, int size);
+/**
+ * _strcat - concatenate two strings
+ * @dest: string to be appended to
+ * @src: string to append
+ * Return: concatenated string
+ */
 
-#endif
+char *_strcat(char *dest, char *src)
+{
+	int c = 0;
+	int d = 0;
+
+	while (dest[c] != '\0')
+		c++;
+
+	while (src[d] != '\0')
+	{
+		dest[c] = src[d];
+		c++;
+		d++;
+	}
+	dest[c] = '\0';
+
+	return (dest);
+}
